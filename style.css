@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #cde8fe;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10% 30%; */
+    /* margin: auto; */
+    /* background: white; */
+    background: #d0eaff;
+}
+
+.picture-box {
+    background-color: black;
+    display: flex;
+    /* width: 90%; */
+    /* max-width: 750px; */
+    transform: scale(1.08);
+
+    box-shadow:
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.description-box {
+    padding: 10px 50px;
+    background: white;
+    min-height: 650px;
+    width: 30%;
+    box-shadow:
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.description-box h1 {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.description-box h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.description-box small {
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(70, 197, 70);
+}
+
+.description-box p {
+    padding: 10px 0px;
+    font-size: 18px;
+    color: grey
+}
+
+
+.description-box form {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.size-select p {
+    width: 70px;
+
+}
+
+.size-select input:checked+span {
+    color: blue;
+    font-weight: 600;
+}
+
+.size-select input {
+    display: none;
+}
+
+
+.size-select span {
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.color-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-select p {
+    width: 75px;
+}
+
+.color-select span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+.color-1 {
+    background-color: red;
+}
+
+.color-2 {
+    background-color: #00d874;
+}
+
+.color-3 {
+    background-color: blue;
+}
+
+.color-4 {
+    background-color: yellow;
+}
+
+.color-select input {
+    display: none;
+}
+
+.color-select input:checked+span {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.quantity-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-select p {
+    width: 75px;
+}
+
+.quantity-select input {
+    background: #eee;
+    outline: 0;
+    border: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+
+}
+
+form button {
+    background-color: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+}
+
+.controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.btn {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.active {
+    background: #553ff0;
+}
